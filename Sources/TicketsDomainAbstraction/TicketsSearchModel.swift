@@ -22,4 +22,20 @@ public struct TicketsSearchModel {
 
 	/// Дата возвращения обратно
 	public let returnDate: Date?
+
+	/// Иницализатор
+	/// - Parameters:
+	///   - fromCityCodeIATA: код города отправления
+	///   - fromDate: дата отправления
+	///   - toCityCodeIATA: код города назначения
+	///   - returnDate: дата возвращения обратно
+	public init(fromCityCodeIATA: String,
+				fromDate: Date?,
+				toCityCodeIATA: String,
+				returnDate: Date?) {
+		self.fromCityCodeIATA = fromCityCodeIATA
+		self.fromDate = fromDate
+		self.toCityCodeIATA = toCityCodeIATA
+		self.returnDate = returnDate
+	}
 }

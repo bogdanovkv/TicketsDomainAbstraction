@@ -33,4 +33,22 @@ public struct Ticket {
 
 	/// Истекает
 	public let expires: Date
+
+	public init(fromCityCode: String,
+				toCityCode: String,
+				airlineCode: String,
+				departureDate: Date,
+				arrivalDate: Date,
+				cost: Int,
+				flightNumber: Int,
+				expires: Date) {
+		self.fromCityCode = fromCityCode
+		self.toCityCode = toCityCode
+		self.airlineCode = airlineCode
+		self.departureDate = departureDate
+		self.arrivalDate = arrivalDate
+		self.cost = cost
+		self.flightNumber = flightNumber
+		self.expires = expires
+	}
 }
